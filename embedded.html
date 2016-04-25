@@ -3,6 +3,24 @@
   <meta name="twitter:widgets:new-embed-design" content="on">
 </head>
 <body>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1080550891968023',
+      xfbml      : true,
+      version    : 'v2.6'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
   <div>Embedded tweet here</div>
 <div>
 
@@ -21,6 +39,21 @@
 <a class="twitter-timeline" href="https://twitter.com/search?q=card_name%3A%222586390716%3Amessage_me%22" data-widget-id="702911752820781056">Tweets about card_name:"2586390716:message_me"</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 </div>
+
+FB TESTS ---------- <br/>
+
+<div class="fb-send-to-messenger" 
+  messenger_app_id="1080550891968023" 
+  page_id="263672860641974" 
+  data-ref="Sugary passthrough parameter goes here" 
+  color="blue" 
+  size="standard"></div>
+
+<div class="fb-messengermessageus" 
+  messenger_app_id="1080550891968023" 
+  page_id="263672860641974"
+  color="blue"
+  size="standard" ></div>
 </body>
 </html>
 
