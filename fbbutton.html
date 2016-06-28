@@ -1,0 +1,36 @@
+<html>
+
+<body>
+<h1> Testing the FB Send to messenger button</h1>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1080550891968023',
+      xfbml      : true,
+      version    : 'v2.6'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<br/>
+<br/>
+<h2>The button></h2>
+
+<div class="fb-send-to-messenger" 
+  messenger_app_id="1080550891968023" 
+  page_id="263672860641974" 
+  data-ref="PASS_THROUGH_PARAM" 
+  color="blue" 
+  size="standard"></div>
+
+</body>
+
+</html>
